@@ -1,13 +1,13 @@
 var React = require('react');
 
-var Landing = React.createClass({
+var About = React.createClass({
   render: function(){
     return (
       <div>
-        <h3> Landing Page </h3>
+        <h3> About </h3>
       </div>
     )
   }
 });
 
-module.exports = Landing;
+module.exports = About;

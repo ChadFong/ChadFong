@@ -1,14 +1,13 @@
 var React = require('react');
+var Link = require('react-router').Link;
 
 var Navbar = React.createClass({
-  getInitialState: function(){
-    return null;
-  },
   render: function(){
     return (
       <div>
-        <div className="nav"> About </div>
-        <div className="nav"> Other </div>
+        <Link to="about">About</Link>
+        <Link to="blog">Blog</Link>
+        <Link to="projects">Projects</Link>
       </div>
     )
   }

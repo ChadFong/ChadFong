@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "description": "Chad Fong's personal website",
   "author": "Chad Fong <chadmfong@gmail.com>",
-  "contributors": [
-  ],
+  "contributors": [],
   "bin": {
     "module-name": "./bin/module-name"
   },
@@ -16,7 +15,8 @@
   "keywords": [],
   "dependencies": {
     "flux": "^2.0.3",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
   },
   "devDependencies": {
     "browserify": "^10.1.3",
