@@ -73,16 +73,6 @@ body {
     justify-content: center;
 }
 
-.navbar div {
-    padding: 5px;
-    width: auto;
-    height: auto;
-    margin: 1% 2.5% 1% 2.5%;
-    line-height: 20px;
-    color: white;
-    text-align: center;
-}
-
 .navbar {
   background-color: #FFFDFD;
   display: flex;
@@ -91,6 +81,16 @@ body {
   align-content: center;
   border-bottom: 2px outset #E0E0E0;
   height: 60px;
+}
+
+.navbar div {
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin: 1% 2.5% 1% 2.5%;
+    line-height: 20px;
+    color: white;
+    text-align: center;
 }
 
 .navbar a {
@@ -116,10 +116,17 @@ body {
   background-color: #889096;
   float: left;
   width: 150px;
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-main {
+.sidebar div {
+
+}
+
+.blog {
   top: 62px;
   padding-left: 150px;
   right: 0;
