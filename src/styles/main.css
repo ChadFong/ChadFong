@@ -90,6 +90,7 @@ body {
   justify-content: center;
   align-content: center;
   border-bottom: 2px outset #E0E0E0;
+  height: 60px;
 }
 
 .navbar a {
@@ -109,9 +110,21 @@ body {
   color: #B7B4B4;
 }
 
+.sidebar {
+  position: absolute;
+  left: 0; top: 62px; bottom: 0;
+  background-color: #889096;
+  float: left;
+  width: 150px;
+  display: block;
+}
 
-
-
+main {
+  top: 62px;
+  padding-left: 150px;
+  right: 0;
+  bottom: 0;
+}
 
 
 

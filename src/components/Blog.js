@@ -6,10 +6,23 @@ var Blog = React.createClass({
   render: function(){
     return (
       <div>
-        <h3> Blog </h3>
-        <div>
-          <p>Sidebar</p>
-          <Link to="post" params={{name: "git"}}> Click HERE</Link>
+        <div className="sidebar flex-container">
+          <div>Sidebar</div>
+          <div>First topic</div>
+          <div>
+            <Link to="post" params={{name: "git"}}> Click HERE</Link>
+          </div>
+          <div>
+            <Link to="post" params={{name: "javascript"}}> Click HERE</Link>
+          </div>
+
+          <div>Next topic</div>
+          <div>
+            <Link to="post" params={{name: "crawl"}}> Click HERE</Link>
+          </div>
+          <div>
+            <Link to="post" params={{name: "walk"}}> Click HERE</Link>
+          </div>
         </div>
         <main>
           <RouteHandler/>
