@@ -4,6 +4,7 @@ var Navbar = require('./components/Navbar');
 var Landing = require('./components/Landing');
 var About = require('./components/About');
 var Blog = require('./components/Blog');
+var Post = require('./components/Post');
 var Projects = require('./components/Projects');
 
 var Router = require('react-router');
@@ -24,10 +25,11 @@ var App = React.createClass({
 
 var routes = (
   <Route handler={App}>
-    <Route name="landing" handler={Landing}/>
-    <Redirect from="/" to="landing" />
+    <Route handler={Landing}/>
     <Route name="about" handler={About}/>
-    <Route name="blog" handler={Blog}/>
+    <Route name="blog" handler={Blog}>
+      <Route name="post" path=":name" handler={Post}/>
+    </Route>
     <Route name="projects" handler={Projects}/>
   </Route>
 );
