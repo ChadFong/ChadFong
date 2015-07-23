@@ -15,7 +15,7 @@ var Blog = React.createClass({
       var posts = topic.posts.map(function(post){
         return (
           <div className="post">
-            <Link to="post" params={{name: post.name}}>{post.name}</Link>
+            <Link to="post" params={{key: post.name, topic:topic.topic, name:post.name}}>{post.name}</Link>
           </div>
         );
       });
