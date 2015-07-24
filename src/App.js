@@ -28,7 +28,7 @@ var routes = (
     <Route handler={Landing}/>
     <Route name="about" handler={About}/>
     <Route name="blog" handler={Blog}>
-      <Route name="post" path=":name" handler={Post}/>
+      <Route name="post" path=":topic/:name" handler={Post}/>
     </Route>
     <Route name="projects" handler={Projects}/>
   </Route>

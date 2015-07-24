@@ -1,22 +1,16 @@
 var React = require('react');
 
+var blogPosts = require('../blogPosts/postReferences');
+
 var Post = React.createClass({
-  componentDidMount: function () {
-    // from the path `/inbox/messages/:id`
-    // var id = this.props.params.id;
-    console.log(this.props);
-    // fetchMessage(id, function (err, message) {
-    //   this.setState({ message: message });
-    // })
-  },
   render: function () {
+    var topic = this.props.params.topic;
+    var name = this.props.params.name;
+
     return (
-      <div>
-        <p>HEY!</p>
-      </div>
+        <div dangerouslySetInnerHTML={{__html: blogPosts[topic][name]}} />
       )
   }
-  // ...
 });
 
 module.exports = Post;
