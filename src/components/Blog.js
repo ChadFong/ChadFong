@@ -2,30 +2,33 @@ var React = require('react');
 var Link = require('react-router').Link;
 var RouteHandler = require('react-router').RouteHandler;
 
-var posts = require('./posts');
+var blogPosts = require('../blogPosts/postReferences');
 
 var Blog = React.createClass({
 
   loadPosts: function() {
 
-    return posts.map(function(topic) {
-      
-      var posts = topic.posts.map(function(post){
+    topics = Object.keys(blogPosts);
+    return topics.map(function(topic) {
+
+      var posts = Object.keys(blogPosts[topic]);
+      posts = posts.map(function(post, i){
         return (
           <div className="post">
-            <Link to="post" params={{key: post.name, topic:topic.topic, name:post.name}}>{post.name}</Link>
+            <Link to="post" params={{key: post, topic:topic, name:post}}>{post}</Link>
           </div>
         );
       });
 
       return (
         <div className="topicBlock">
-          <div className="topic">{topic.topic}</div>
+          <div className="topic">{topic}</div>
           {posts}
         </div>
       );
     });
   },
+
   render: function(){
     return (
       <div>
