@@ -6,12 +6,10 @@ var posts = require('./posts');
 
 var Blog = React.createClass({
 
-  componentDidMount: function() {
-    console.log(posts);
-  },
-
   loadPosts: function() {
+
     return posts.map(function(topic) {
+      
       var posts = topic.posts.map(function(post){
         return (
           <div className="post">
@@ -19,6 +17,7 @@ var Blog = React.createClass({
           </div>
         );
       });
+
       return (
         <div className="topicBlock">
           <div className="topic">{topic.topic}</div>
