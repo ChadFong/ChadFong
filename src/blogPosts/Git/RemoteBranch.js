@@ -1,0 +1,27 @@
+var strVar="";
+strVar += "Have you been wondering if there is a quick and easy way to pull down remote branches to your local repository?  Because I have, and I found out how.  You can specify a branch to pull down using this syntax: ";
+strVar += "`(desired base)$ git pull <remote repo> <remote branch>:<local branch>`";
+strVar += "";
+strVar += "For example, say we have this remote:";
+strVar += "";
+strVar += "    Upstream:";
+strVar += "    master: A <-- B <-- C <-- D";
+strVar += "                   \"";
+strVar += "    develop:        1 <-- 2 <-- 3 <-- 4";
+strVar += "";
+strVar += "If we use `git clone` we are only given the master branch:";
+strVar += "`Local:  master: A <-- B <-- C <-- D`   ";
+strVar += "But we want the develop branch too!  What do we do?  We tell git to pull the develop branch to our own develop branch.  Git will see our lack, and create the branch for us.  (If you want to avoid merge conflicts, be sure to checkout the commit that develop branches from). i.e.,";
+strVar += "`(B)$ git pull upstream develop:develop`    ";
+strVar += "which will give us:";
+strVar += "";
+strVar += "    Local:";
+strVar += "    master: A <-- B <-- C <-- D";
+strVar += "                   \"";
+strVar += "    develop:        1 <-- 2 <-- 3 <-- 4";
+strVar += "    ";
+strVar += "Now, whichever location we have checked out is where the commits we are targeting will be appended to.  So if we had commits A, C, or D checked out develop would have branched from there.  While a neat trick, it is best practice to maintain the structure of the remote repo, so don't have too much fun.";
+strVar += "";
+strVar += "Notice, you can name your new local branch anything you want to.  We could have said `(B)$ git pull upstream develop:arbitraryName` and we would have the same commits as our remote, but under a different branch name (it would point to the correct remote, it would just be confusing).  You have to specify the remote branch correctly to pull what you want, but you can name it whatever you like locally (again, I recommend you maintain the same naming conventions as your remote).";
+
+module.exports = strVar;
