@@ -56,7 +56,6 @@ html, body {
 }
 
 body {
-  background-color: #F9F9F9;
   margin: 0;
 }
 
@@ -74,7 +73,7 @@ body {
 }
 
 .navbar {
-  background-color: #FFFDFD;
+  background-color: #CAC9C9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,6 +81,8 @@ body {
   border-bottom: 2px outset #E0E0E0;
   height: 60px;
 }
+
+/*889096  FFFDFD   CAC9C9*/
 
 .navbar div {
     padding: 5px;
@@ -95,7 +96,7 @@ body {
 
 .navbar a {
   font-size: 2.25em;
-  color: #CAC9C9;
+  color: #FFFDFD;
   max-width: 50%
   align-items: center;
   flex: 1 1 auto;
@@ -110,25 +111,38 @@ body {
   color: #B7B4B4;
 }
 
+
 .sidebar {
   position: absolute;
   left: 0; top: 62px; bottom: 0;
-  background-color: #889096;
+  background-color: #F9F9F9;
   float: left;
-  width: 150px;
+  width: 170px;
+  padding: 40px;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
   justify-content: flex-start;
+  overflow: scroll;
 }
 
-.sidebar div {
+.Title {
+  padding-bottom: 1em;
+  width: 100%;
+}
 
+.TopicName {
+  font-family: Arial Black, sans-serif;
+}
+
+.Post {
+  font-family: Arial;
+  line-height: 1.5;
 }
 
 .blog {
   top: 62px;
-  padding-left: 150px;
+  padding-left: 250px;
   right: 0;
   bottom: 0;
 }

@@ -12,15 +12,17 @@ var Blog = React.createClass({
       var posts = Object.keys(blogPosts[topic]);
       posts = posts.map(function(post){
         return (
-          <div className="post">
+          <li className="Post">
             <Link to="post" params={{topic:topic, name:post}}>{post}</Link>
-          </div>
+          </li>
         );
       });
       return (
-        <div className="topicBlock">
-          <div className="topic">{topic}</div>
+        <div className="Topic">
+          <div className="TopicName">{topic}</div>
+          <ul>
           {posts}
+          </ul>
         </div>
       );
     });
@@ -30,7 +32,7 @@ var Blog = React.createClass({
     return (
       <div>
         <div className="sidebar flex-container">
-          <div className="title">Blog</div>
+          <h3 className="Title">Blog</h3>
           {this.loadPosts()}
         </div>
         <main className="blog">
