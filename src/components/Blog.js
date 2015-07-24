@@ -7,19 +7,16 @@ var blogPosts = require('../blogPosts/postReferences');
 var Blog = React.createClass({
 
   loadPosts: function() {
-
     topics = Object.keys(blogPosts);
     return topics.map(function(topic) {
-
       var posts = Object.keys(blogPosts[topic]);
-      posts = posts.map(function(post, i){
+      posts = posts.map(function(post){
         return (
           <div className="post">
-            <Link to="post" params={{key: post, topic:topic, name:post}}>{post}</Link>
+            <Link to="post" params={{topic:topic, name:post}}>{post}</Link>
           </div>
         );
       });
-
       return (
         <div className="topicBlock">
           <div className="topic">{topic}</div>
