@@ -79,8 +79,6 @@ body {
   height: 60px;
 }
 
-/*889096  FFFDFD   CAC9C9*/
-
 .navbar div {
     padding: 5px;
     width: auto;
@@ -172,12 +170,36 @@ h3 {
 }
 
 
+/* ======= ABOUT ======= */
 
+.websites {
+    width: auto;
+    height: auto;
+    margin: 5px 2.5% 1% 2.5%;
+    text-align: center;
+    flex: 0 1 auto;
+    justify-content: space-around;
+    font-family: "Palatino", serif;
+}
 
+.websites a {
+  font-size: 1.25em;
+  flex: 1 1 auto;
+}
 
+.websites a:hover {
+  color: #E0E0E0;
+}
 
+.websites a.active {
+  text-decoration: underline;
+  color: #B7B4B4;
+}
 
-
+.websites p {
+  font-size: 1.5em;
+  padding-bottom: 3px;
+}
 
 
 
