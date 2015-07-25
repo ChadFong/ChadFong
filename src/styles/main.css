@@ -53,6 +53,7 @@ table {
 
 html, body {
   height: 100%;
+  font-family: Arial;
 }
 
 body {
@@ -80,6 +81,7 @@ body {
   align-content: center;
   border-bottom: 2px outset #E0E0E0;
   height: 60px;
+  font-family: "Copperplate", "Verdana", "Tahoma";
 }
 
 .navbar div {
@@ -192,7 +194,7 @@ h3 {
     text-align: center;
     flex: 0 1 auto;
     justify-content: space-around;
-    font-family: "Palatino", serif;
+    font-family: "Garamond", "Baskerville", "Palatino", serif;
 }
 
 .websites a {
