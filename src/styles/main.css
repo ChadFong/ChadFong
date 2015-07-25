@@ -72,6 +72,9 @@ body {
     justify-content: center;
 }
 
+
+/* ======= NAVBAR ======= */
+
 .navbar {
   background-color: #CAC9C9;
   align-content: center;
@@ -106,6 +109,9 @@ body {
   color: #B7B4B4;
 }
 
+/* ======= BLOG ======= */
+
+/* --- Sidebar --- */
 
 .sidebar {
   position: absolute;
@@ -135,12 +141,17 @@ body {
   line-height: 1.5;
 }
 
+/* --- Blog --- */
+
 .blog {
   top: 62px;
   padding-left: 250px;
   right: 0;
   bottom: 0;
 }
+
+
+/* ======= LANDING PAGE ======= */
 
 .Landing {
   flex-flow: column nowrap;
@@ -171,6 +182,8 @@ h3 {
 
 
 /* ======= ABOUT ======= */
+
+/* --- Website Links --- */
 
 .websites {
     width: auto;
