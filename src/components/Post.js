@@ -8,7 +8,7 @@ var Post = React.createClass({
     var name = this.props.params.name;
 
     return (
-        <div dangerouslySetInnerHTML={{__html: blogPosts[topic][name]}} />
+        <div className="markdown-body" dangerouslySetInnerHTML={{__html: blogPosts[topic][name]}} />
       )
   }
 });
