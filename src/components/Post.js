@@ -9,7 +9,7 @@ var Post = React.createClass({
 
     return (
       <main className="blog markdown-body">
-        <h1>{name}</h1>
+        <h1>{topic}: <br/>{name}</h1>
         <div dangerouslySetInnerHTML={{__html: blogPosts[topic][name]}} />
       </main>
       )

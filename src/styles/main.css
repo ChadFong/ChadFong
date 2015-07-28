@@ -211,7 +211,8 @@ h3 {
 }
 
 .Topic ul {
-  list-style: disc inside;
+  list-style: disc outside;
+  margin-left: 1em;
 }
 
 .Topic a.active {
@@ -232,7 +233,7 @@ h3 {
 
 .blog {
   margin-left: 250px;
-  padding: 5% 8% 5% 8%;
+  padding: 3% 8% 5% 8%;
   right: 0;
   bottom: 0;
 }
