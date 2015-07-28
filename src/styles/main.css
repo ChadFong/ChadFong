@@ -197,7 +197,7 @@ h3 {
   background-color: #F9F9F9;
   float: left;
   width: 250px;
-  padding: 40px;
+  padding: 30px;
   box-sizing: border-box;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -208,6 +208,15 @@ h3 {
 .Title {
   padding-bottom: 1em;
   width: 100%;
+}
+
+.Topic ul {
+  list-style: disc inside;
+}
+
+.Topic a.active {
+  color: red;
+  text-decoration: underline;
 }
 
 .TopicName {
