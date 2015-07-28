@@ -15,7 +15,7 @@ var Redirect = Router.Redirect;
 var App = React.createClass({
   render: function(){
     return (
-      <div>
+      <div id="app">
         <Navbar />
         <div className="body">
           <RouteHandler/>
@@ -37,6 +37,6 @@ var routes = (
 );
 
 Router.run(routes, Router.HashLocation, function(Root) {
-  React.render(<Root/>, document.getElementById('app'));
+  React.render(<Root/>, document.body);
 });
 

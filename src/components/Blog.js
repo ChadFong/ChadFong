@@ -35,9 +35,7 @@ var Blog = React.createClass({
           <h3 className="Title">Blog</h3>
           {this.loadPosts()}
         </div>
-        <main className="blog">
-          <RouteHandler/>
-        </main>
+        <RouteHandler/>
       </div>
     )
   }
