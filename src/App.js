@@ -17,7 +17,9 @@ var App = React.createClass({
     return (
       <div>
         <Navbar />
-        <RouteHandler/>
+        <div className="body">
+          <RouteHandler/>
+        </div>
       </div>
     )
   }

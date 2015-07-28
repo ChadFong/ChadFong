@@ -77,11 +77,14 @@ body {
 /* ======= NAVBAR ======= */
 
 .navbar {
+  position: fixed;
+  width: 100%;
   background-color: #CAC9C9;
   align-content: center;
   border-bottom: 2px outset #E0E0E0;
   height: 60px;
   font-family: "Copperplate", "Verdana", "Tahoma";
+  z-index: 900;
 }
 
 .navbar div {
@@ -111,6 +114,13 @@ body {
   color: #B7B4B4;
 }
 
+/* ======= BODY ======= */
+
+.body {
+  position: absolute;
+  top: 62px; left: 0; right: 0; bottom: 0;
+  z-index: 100;
+}
 
 /* ======= LANDING PAGE ======= */
 
@@ -125,6 +135,7 @@ body {
 
 .Landing img {
   width: 100%;
+  max-width: 600px;
   height: auto;
 }
 
@@ -182,8 +193,7 @@ h3 {
 /* --- Sidebar --- */
 
 .sidebar {
-  position: absolute;
-  left: 0; top: 62px; bottom: 0;
+  position: fixed;
   background-color: #F9F9F9;
   float: left;
   width: 250px;
@@ -212,7 +222,6 @@ h3 {
 /* --- Blog --- */
 
 .blog {
-  top: 62px;
   margin-left: 250px;
   padding: 5% 8% 5% 8%;
   right: 0;
