@@ -130,7 +130,7 @@ body {
   width: 50%;
   margin: 2.5% auto 0 auto;
   text-align: center;
-  font-family: Arial Black;
+  font-family: "Arial Black";
 }
 
 .Landing img {
@@ -138,20 +138,6 @@ body {
   max-width: 600px;
   height: auto;
 }
-
-h1 {
-  font-family: Arial Black, sans-serif;
-  font-size: 1.2em;
-}
-
-h2 {
-  font-size: 1.1em;
-}
-
-h3 {
-  font-family: Arial;
-}
-
 
 /* ======= ABOUT ======= */
 
@@ -221,11 +207,11 @@ h3 {
 }
 
 .TopicName {
-  font-family: Arial Black, sans-serif;
+  font-family: "Arial Black", "sans-serif";
 }
 
 .Post {
-  font-family: Arial;
+  font-family: "Arial";
   line-height: 1.5;
 }
 
@@ -254,7 +240,7 @@ h3 {
   text-size-adjust: 100%;
   color: #333;
   overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Segoe UI", "Arial", "freesans", "sans-serif";
   font-size: 16px;
   line-height: 1.6;
   word-wrap: break-word;
