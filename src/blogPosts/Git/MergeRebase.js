@@ -1,7 +1,7 @@
 var strVar="";
 strVar += "<p>This post is powered by <a href=\"http:\/\/pcottle.github.io\/learnGitBranching\/\">Learn Git Branching<\/a>, an awesome resource to learn and visualize how git works.<\/p>";
 strVar += "";
-strVar += "<p>Parallel to the many git-workflows, there are several ways to coalesce commits into one branch.  This post will explain them.<\/p>";
+strVar += "<p>In addition to the many git-workflows, there are several ways to coalesce commits into one branch.  This post will explain them.<\/p>";
 strVar += "";
 strVar += "<h4>Git Merge<\/h4>";
 strVar += "<div>";
