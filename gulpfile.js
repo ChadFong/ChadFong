@@ -23,7 +23,7 @@ gulp.task('copy', function(){
     .pipe(gulp.dest('dist'));
   gulp.src('src/styles/*.css')
     .pipe(gulp.dest('dist/styles'));
-  gulp.src('src/Assets/**/*.png', {base: 'src'})
+  gulp.src('src/Assets/**/*.*', {base: 'src'})
     .pipe(gulp.dest('dist/'));
 });
 
