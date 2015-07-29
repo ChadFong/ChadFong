@@ -173,6 +173,66 @@ body {
 }
 
 
+/* ======= PROJECTS ======= */
+
+.Projects-Holder {
+  max-width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+.Project {
+  margin: 30px 50px 30px 50px;
+}
+
+.Project > .Header {
+  padding-bottom: 0.4em;
+  border-bottom: solid 1px #bbb;
+}
+
+.Header > h2 {
+  font-family: "Arial Black";
+  font-size: 2em;
+  display: inline;
+}
+
+.Header > p {
+  display: inline;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+.Content {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 20px;
+  height: 250px;
+}
+
+.MainScreen {
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  flex: 0 0 auto;
+  border: black 1px solid;
+}
+
+.Description {
+  flex: 1 1 auto;
+  margin: 10px;
+}
+
+.Description > p {
+  vertical-align: top;
+  font-style: italic;
+}
+
+.Description > ul {
+  list-style: disc outside;
+  margin: 10px;
+  margin-left: 1.5em;
+  line-height: 1.15em;
+}
 
 /* ======= BLOG ======= */
 
