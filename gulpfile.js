@@ -34,3 +34,7 @@ gulp.task('watch', function(){
 gulp.task('default', function(cb) {
   runSequence('clean', 'browserify', 'copy', 'watch', cb);
 });
+
+gulp.task('build', function() {
+  runSequence('clean', 'browserify', 'copy');
+});
