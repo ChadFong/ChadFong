@@ -8,14 +8,14 @@ var Projects = React.createClass({
       return (
         <div className="Project">
         <div className="Header">
-          <h2>{project.title}: </h2><p>{project.shortBlurb}</p>
+          <h2>{project.title} | </h2><p>{project.role}</p>
         </div>
           <div className="Content flex-container">
             <div className="MainScreen">
               <img src={project.screenSrc} />
             </div>
             <div className="Description">
-              <p>{project.longBlurb}</p>
+              <p>{project.blurb}</p>
               <ul className="ResumePoints">
                 {project.bulletPoints.map(function(point) {
                   return (

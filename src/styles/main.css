@@ -177,7 +177,7 @@ body {
 
 .Projects-Holder {
   max-width: 75%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 .Project {
@@ -205,21 +205,18 @@ body {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  margin: 20px;
-  height: 250px;
+  margin: 20px 0 20px 20px;
 }
 
 .MainScreen {
   display: inline-block;
   margin: 10px;
-  width: 250px;
   flex: 0 0 auto;
-  border: black 1px solid;
 }
 
 .Description {
   flex: 1 1 auto;
-  margin: 10px;
+  margin: 10px 0 10px 10px;
 }
 
 .Description > p {
@@ -229,9 +226,13 @@ body {
 
 .Description > ul {
   list-style: disc outside;
-  margin: 10px;
+  margin: 10px 0 10px 10px;
   margin-left: 1.5em;
   line-height: 1.15em;
+}
+
+.Description li {
+  margin-bottom: 0.5em;
 }
 
 /* ======= BLOG ======= */
