@@ -8,13 +8,13 @@ var Landing = React.createClass({
           <img src="./Assets/Photos/HeadCir.png" />
         </div>
         <div className="Landing-text">
-          <h1>I am Chad Fong:</h1>
-          <ul>
-            <li>Developer</li>
-            <li>Adventurer</li>
-            <li>Boardgamer</li>
-            <li>Swing Dancer</li>
-          </ul>
+          <h1>Chad Fong</h1>
+          <div>
+            <span>Developer</span>
+            <span>Adventurer</span>
+            <span>Boardgamer</span>
+            <span>Swing Dancer</span>
+          </div>
         </div>
       </div>
     )

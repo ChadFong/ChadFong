@@ -143,8 +143,17 @@ body {
   width: 100%;
 }
 
-.Landing-text {
-  margin-top: 20px;
+.Landing-text h1 {
+  margin: 5% auto 2.5% auto;
+  font-size: 5vw;
+}
+
+.Landing-text span {
+  display: inline-block;
+  padding: 0 2.5% 0 2.5%;
+  font-size: 1.75vw;
+  line-height: 2.5vw;
+  font-family: Arial;
 }
 
 /* ======= ABOUT ======= */
