@@ -14,7 +14,7 @@ module.exports = [
     title: "Telefrag",
     role: "Software Engineer",
     blurb: "Local multiplayer game developed in Unity3D and C#",
-    screenSrc: "./Assets/Projects/Marginalio",
+    screenSrc: "./Assets/ProjectPics/Telefrag.gif",
     bulletPoints: [
       "Modularized codebase by separating concerns and implementing events and factories to keep project extensible",
       "Implemented menu and game-type systems using interfaces and abstract classes to maintain modularity"
