@@ -3,11 +3,19 @@ var React = require('react');
 var Landing = React.createClass({
   render: function(){
     return (
-      <div className="Landing flex-container">
-        <img src="./Assets/Photos/HeadCir.png" />
-        <h1>Welcome!</h1>
-        <h2>My name is Chad, and I am a software developer</h2>
-        <h3>Feel free to explore my site to learn more about me</h3>
+      <div className="Landing">
+        <div className="Prof">
+          <img src="./Assets/Photos/HeadCir.png" />
+        </div>
+        <div className="Landing-text">
+          <h1>Chad Fong</h1>
+          <div>
+            <span>Developer</span>
+            <span>Adventurer</span>
+            <span>Boardgamer</span>
+            <span>Swing Dancer</span>
+          </div>
+        </div>
       </div>
     )
   }

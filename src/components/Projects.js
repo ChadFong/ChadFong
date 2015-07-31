@@ -5,10 +5,11 @@ var projects = require('../Projects/projectData');
 var Projects = React.createClass({
   loadProjects: function() {
     return projects.map(function(project) {
+      var displayTitle = project.title + " | ";
       return (
         <div className="Project">
         <div className="Header">
-          <h2>{project.title} | </h2><p>{project.role}</p>
+          <h2>{displayTitle}</h2><p>{project.role}</p>
         </div>
           <div className="Content flex-container">
             <div className="MainScreen">

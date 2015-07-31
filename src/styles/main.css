@@ -60,6 +60,14 @@ body {
   margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Arial Black"
+}
+
+span, p, li {
+  font-family: "Arial"
+}
+
 .flex-container {
     height: 100%;
     padding: 0;
@@ -125,18 +133,33 @@ body {
 /* ======= LANDING PAGE ======= */
 
 .Landing {
-  flex-flow: column nowrap;
-  align-content: center;
   width: 50%;
-  margin: 2.5% auto 0 auto;
+  margin: 2.5% auto 5% auto;
   text-align: center;
-  font-family: "Arial Black";
 }
 
-.Landing img {
+.Prof {
   width: 100%;
-  max-width: 600px;
-  height: auto;
+  max-width: 450px;
+  max-height: 450px;
+  margin: 0 auto 0 auto;
+}
+
+.Prof > img {
+  height: 100%;
+  width: 100%;
+}
+
+.Landing-text h1 {
+  margin: 5% auto 2.5% auto;
+  font-size: 5vw;
+}
+
+.Landing-text span {
+  display: inline-block;
+  padding: 0 2.5% 0 2.5%;
+  font-size: 1.75vw;
+  line-height: 2.5vw;
 }
 
 /* ======= ABOUT ======= */
@@ -199,7 +222,6 @@ body {
 }
 
 .Header > h2 {
-  font-family: "Arial Black";
   font-size: 2em;
   display: inline;
 }
@@ -281,21 +303,35 @@ body {
 }
 
 .Post {
-  font-family: "Arial";
   line-height: 1.5;
 }
 
 /* --- Blog --- */
 
 .blog {
+  position: absolute;
   margin-left: 250px;
   padding: 3% 8% 5% 8%;
+  top: 0;
   right: 0;
   bottom: 0;
+  background-color: white;
 }
 
-.blog a {
-  color: blue;
+.Instructions {
+  margin-left: 250px;
+  padding-top: 15%;
+  text-align: center;
+  z-index: 0;
+}
+
+.Instructions h1 {
+  font-size: 2.5vw;
+  margin-bottom: 2.5%;
+}
+
+.Instructions p {
+  font-size: 1.5vw;
 }
 
 
