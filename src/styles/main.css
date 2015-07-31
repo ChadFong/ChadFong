@@ -125,18 +125,26 @@ body {
 /* ======= LANDING PAGE ======= */
 
 .Landing {
-  flex-flow: column nowrap;
-  align-content: center;
   width: 50%;
-  margin: 2.5% auto 0 auto;
+  margin: 2.5% auto 5% auto;
   text-align: center;
   font-family: "Arial Black";
 }
 
-.Landing img {
+.Prof {
   width: 100%;
-  max-width: 600px;
-  height: auto;
+  max-width: 450px;
+  max-height: 450px;
+  margin: 0 auto 0 auto;
+}
+
+.Prof > img {
+  height: 100%;
+  width: 100%;
+}
+
+.Landing-text {
+  margin-top: 20px;
 }
 
 /* ======= ABOUT ======= */
