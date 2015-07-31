@@ -235,8 +235,17 @@ span, p, li {
 
 .Proj-Link {
   position: absolute;
+  font-style: italic;
   right: 0;
   bottom: 0.4em;
+}
+
+.Proj-Link a {
+  color: #4078c0;
+}
+
+.Proj-Link a:hover {
+  text-decoration: underline;
 }
 
 .Content {
