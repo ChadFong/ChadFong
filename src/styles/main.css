@@ -217,6 +217,7 @@ span, p, li {
 }
 
 .Project > .Header {
+  position: relative;
   padding-bottom: 0.4em;
   border-bottom: solid 1px #bbb;
 }
@@ -230,6 +231,12 @@ span, p, li {
   display: inline;
   font-style: italic;
   font-size: 1.25em;
+}
+
+.Proj-Link {
+  position: absolute;
+  right: 0;
+  bottom: 0.4em;
 }
 
 .Content {

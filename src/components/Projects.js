@@ -6,10 +6,25 @@ var Projects = React.createClass({
   loadProjects: function() {
     return projects.map(function(project) {
       var displayTitle = project.title + " | ";
+      var status;
+      if (typeof project.status === "string") {
+        status = (<span className="Proj-Link">{project.status}</span>);
+      } else {
+        status = (
+          <span className="Proj-Link">
+            <a href={project.status.link}>{project.status.title}</a>
+            <span> | </span>
+            <a href={project.status.repo}>Repo</a>
+          </span>
+          );
+      }
+
       return (
         <div className="Project">
         <div className="Header">
-          <h2>{displayTitle}</h2><p>{project.role}</p>
+          <h2>{displayTitle}</h2>
+          <p>{project.role}</p>
+          {status}
         </div>
           <div className="Content flex-container">
             <div className="MainScreen">
