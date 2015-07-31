@@ -35,6 +35,10 @@ var Blog = React.createClass({
           <h3 className="Title">Blog</h3>
           {this.loadPosts()}
         </div>
+        <div className="Instructions">
+          <h1>Welcome to my technical blog!</h1>
+          <p>Choose a post from the sidebar to get started.</p>
+        </div>
         <RouteHandler/>
       </div>
     )

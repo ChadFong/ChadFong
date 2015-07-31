@@ -305,14 +305,30 @@ body {
 /* --- Blog --- */
 
 .blog {
+  position: absolute;
   margin-left: 250px;
   padding: 3% 8% 5% 8%;
+  top: 0;
   right: 0;
   bottom: 0;
+  background-color: white;
 }
 
-.blog a {
-  color: blue;
+.Instructions {
+  margin-left: 250px;
+  padding-top: 15%;
+  text-align: center;
+  z-index: 0;
+}
+
+.Instructions h1 {
+  font-family: "Arial Black";
+  font-size: 2.5vw;
+  margin-bottom: 2.5%;
+}
+
+.Instructions p {
+  font-size: 1.5vw;
 }
 
 
