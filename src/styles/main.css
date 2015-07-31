@@ -60,6 +60,14 @@ body {
   margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Arial Black"
+}
+
+span, p, li {
+  font-family: "Arial"
+}
+
 .flex-container {
     height: 100%;
     padding: 0;
@@ -128,7 +136,6 @@ body {
   width: 50%;
   margin: 2.5% auto 5% auto;
   text-align: center;
-  font-family: "Arial Black";
 }
 
 .Prof {
@@ -153,7 +160,6 @@ body {
   padding: 0 2.5% 0 2.5%;
   font-size: 1.75vw;
   line-height: 2.5vw;
-  font-family: Arial;
 }
 
 /* ======= ABOUT ======= */
@@ -216,7 +222,6 @@ body {
 }
 
 .Header > h2 {
-  font-family: "Arial Black";
   font-size: 2em;
   display: inline;
 }
@@ -298,7 +303,6 @@ body {
 }
 
 .Post {
-  font-family: "Arial";
   line-height: 1.5;
 }
 
@@ -322,7 +326,6 @@ body {
 }
 
 .Instructions h1 {
-  font-family: "Arial Black";
   font-size: 2.5vw;
   margin-bottom: 2.5%;
 }
