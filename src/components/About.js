@@ -3,7 +3,7 @@ var React = require('react');
 var About = React.createClass({
   render: function(){
     return (
-      <div>
+      <div className="About-body">
         <div className="websites flex-container">
           <p>{"<"}</p>
           <div>
@@ -18,6 +18,11 @@ var About = React.createClass({
             <a href="https://github.com/ChadFong">Github</a>
           </div>
           <p>{">"}</p>
+        </div>
+        <div className="About flex-container">
+          <div>
+            <span>Under Construction, visit again soon!</span>
+          </div>
         </div>
       </div>
     )
