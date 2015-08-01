@@ -1,28 +1,38 @@
 var React = require('react');
 
+var aboutContent = require('../about/aboutContent');
+
 var About = React.createClass({
+  loadLinks: function() {
+    var links = [];
+    var spacer;
+    aboutContent.websites.forEach(function(website, i, arr){
+      links.push ((
+        <div>
+          <a href={website.href}>{website.name}</a>
+        </div>
+      ));
+      if (i < arr.length - 1) {
+        links.push((
+          <div>•</div>
+        ))
+      }
+    });
+    
+    return (
+      <div className="websites flex-container">
+        <p>{"<"}</p>
+        {links}
+        <p>{">"}</p>
+      </div>
+    );
+  },
   render: function(){
     return (
       <div className="About-body">
-        <div className="websites flex-container">
-          <p>{"<"}</p>
-          <div>
-            <a href="https://www.linkedin.com/in/chadfong">LinkedIn</a>
-          </div>
-          <div>•</div>
-          <div>
-            <a href="http://stackoverflow.com/users/4543913/">Stack Overflow</a>
-          </div>
-          <div>•</div>
-          <div>
-            <a href="https://github.com/ChadFong">Github</a>
-          </div>
-          <p>{">"}</p>
-        </div>
+        {this.loadLinks()}
         <div className="About flex-container">
-          <div>
-            <span>Under Construction, visit again soon!</span>
-          </div>
+          
         </div>
       </div>
     )
