@@ -27,12 +27,29 @@ var About = React.createClass({
       </div>
     );
   },
+  loadFactoids: function() {
+    var list = aboutContent.factoids.map(function(factoid){
+      return(
+        <li>
+          <span className="title">{factoid.title}</span><span>{factoid.details}</span>
+        </li>
+      )
+    });
+
+    return (
+      <ul>
+        {list}
+      </ul>
+    )
+  },
   render: function(){
     return (
       <div className="About-body">
         {this.loadLinks()}
         <div className="About flex-container">
-          
+          <div className="Factoids">
+            {this.loadFactoids()}
+          </div>
         </div>
       </div>
     )
