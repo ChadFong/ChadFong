@@ -2,6 +2,11 @@ module.exports = [
   {
     title: "Stego",
     role: "Full Stack Engineer",
+    status: {
+      title: "Demo",
+      link: "http://chadfong.github.io/stego/",
+      repo: "https://github.com/ChadFong/stego",
+    },
     blurb: "Chrome extension that encourages programmers to balance work and exercise",
     screenSrc: "./Assets/ProjectPics/Stego.png",
     bulletPoints: [
@@ -13,6 +18,7 @@ module.exports = [
   {
     title: "Telefrag",
     role: "Software Engineer",
+    status: "In Development",
     blurb: "Local multiplayer game developed in Unity3D and C#",
     screenSrc: "./Assets/ProjectPics/Telefrag.gif",
     bulletPoints: [
@@ -23,6 +29,11 @@ module.exports = [
     {
     title: "CONGRE$$",
     role: "Full Stack Engineer & Product Owner",
+    status: {
+      title: "View",
+      link: "http://lobbyinglobby.azurewebsites.net/#/",
+      repo: "https://github.com/ChadFong/congress",
+    },
     blurb: "Satirical platform for lobbyists to bid on Congressional votes",
     screenSrc: "./Assets/ProjectPics/Congre$$.png",
     bulletPoints: [
@@ -33,6 +44,11 @@ module.exports = [
   {
     title: "Marginalio",
     role: "Full Stack Engineer & Scrum Master",
+    status: {
+      title: "View",
+      link: "http://marginalio.azurewebsites.net/login",
+      repo: "https://github.com/ChadFong/Marginalio",
+    },
     blurb: "Web-based application that enables paragraph-by-paragraph annotation of articles",
     screenSrc: "./Assets/ProjectPics/Marginalio.png",
     bulletPoints: [

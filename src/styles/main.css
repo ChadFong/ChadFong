@@ -203,20 +203,38 @@ span, p, li {
 /* --- About Body --- */
 
 .About {
+  margin: 2.5% auto 0 auto;
+  width: 75%;
+  line-height: 1.5em;
+}
+
+.firstImg {
+  width: 50%;
+  float: left;
+  margin: 0 2.5% 2.5% 0;
+}
+
+.About h1 {
+    margin-bottom: 2%;
+}
+
+.About p {
+    margin: 15px;
 }
 
 /* ======= PROJECTS ======= */
 
 .Projects-Holder {
-  max-width: 75%;
-  margin: 0 auto 20px auto;
+  margin: 0 10% 20px 10%;
 }
 
 .Project {
   margin: 30px 50px 30px 50px;
+  min-width: 460px;
 }
 
 .Project > .Header {
+  position: relative;
   padding-bottom: 0.4em;
   border-bottom: solid 1px #bbb;
 }
@@ -232,11 +250,32 @@ span, p, li {
   font-size: 1.25em;
 }
 
+.Proj-Link {
+  position: absolute;
+  font-style: italic;
+  right: 0;
+  bottom: 0.4em;
+}
+
+.Proj-Link a {
+  color: #4078c0;
+}
+
+.Proj-Link a:hover {
+  text-decoration: underline;
+}
+
 .Content {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
   margin: 20px 0 20px 20px;
+}
+
+@media (max-width: 1088px) {
+  .Content {
+    flex-flow: row wrap;
+  }
 }
 
 .MainScreen {
