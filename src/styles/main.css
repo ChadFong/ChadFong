@@ -203,6 +203,23 @@ span, p, li {
 /* --- About Body --- */
 
 .About {
+  margin: 2.5% auto 0 auto;
+  width: 75%;
+  line-height: 1.5em;
+}
+
+.firstImg {
+  width: 50%;
+  float: left;
+  margin: 0 2.5% 2.5% 0;
+}
+
+.About h1 {
+    margin-bottom: 2%;
+}
+
+.About p {
+    margin: 15px;
 }
 
 /* ======= PROJECTS ======= */
