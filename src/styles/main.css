@@ -211,7 +211,7 @@ span, p, li {
 .firstImg {
   width: 50%;
   float: left;
-  margin: 0 2.5% 2.5% 0;
+  margin: 1% 2% 0% 0%;
 }
 
 .About h1 {
@@ -349,7 +349,7 @@ span, p, li {
 
 .blog {
   position: absolute;
-  margin-left: 250px;
+  left: 250px;
   padding: 3% 8% 5% 8%;
   top: 0;
   right: 0;
@@ -412,6 +412,7 @@ span, p, li {
 
 .markdown-body img {
   border: 0;
+  width: 100%;
 }
 
 .markdown-body hr {
